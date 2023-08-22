@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BusyBus.</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Routes</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="login.html" id="loginButton">Login</a></li>
+        <li><a href="registeration.html" id="registerButton">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="background-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="bus-png">
+    <img src="bus-png.png" width="125" height="80"> 
+  </div>
+
+  <div class="content">
+    <div class="ticketing-system">
+      <div class="logo">BusyBus.</div>
+      <div class="form">
+        <input type="text" placeholder="From City">
+        <input type="text" placeholder="Destination City">
+        <input type="text" placeholder="Bus Type">
+        <input type="date" placeholder="Date">
+        <a href="ticket.html"> <button class="check-availability">Check Availability</button> </a>
+      </div>
+    </div>
+  </div>
+
+  <section id="section2">
+    <div class="popular-routes">
+      <h2>Popular Bus Routes</h2>
+      <p>Route 1</p>
+      <p>Route 2</p>
+      <p>Route 3</p>
+    </div>
+    <div class="covid-precautions">
+      <h2>Important Travel Information</h2>
+      <p>Passengers shall have to observe all rules for safety of self & co-passengers screening, distancing, sanitisation & using face mask / cover during journey.</p>
+      <p>In case of transaction failure/cancel ticket refunds; please do not share your banking credentials (OTP/Login, UPI/Card details, Card Expiry Date). UPSRTC Executive will never ask you for these banking details. Also do not click on any unknown links received in SMS/e-mail for updating banking related information.</p>
+    </div>
+  </section>
+
+  <div class="helpline-contacts">
+    <h2><br>Helpline Contacts</h2>
+    <div class="contact">
+      <p>860-194-2222<br><br>krishnav.694.2022@doonschool.com</p>
+    </div>
+  </div>
+
+  <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registrationModalLabel">Registration Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email ID</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile Number</label>
+              <input type="tel" class="form-control" id="mobile" required>
+            </div>
+            <div class="form-group">
+              <label for="alternateMobile">Alternate Mobile Number</label>
+              <input type="tel" class="form-control" id="alternateMobile">
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" required>
+            </div>
+            <div class="form-group">
+              <label for="state">State</label>
+              <input type="text" class="form-control" id="state" required>
+            </div>
+            <button type="submit" class="btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="logo">BusyBus.</div>
+    <br>&copy; Created by Krishnav Singhal. 2023.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
